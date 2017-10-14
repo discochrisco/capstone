@@ -1,6 +1,7 @@
 html {
-  font-family: arial, sans-serif;
-  font-weight: 16px;
+  font-family: helvetica, sans-serif;
+  font-size: 20px;
+  color: #4a4a4a;
 }
 
 body {
@@ -34,14 +35,17 @@ nav span {
   text-decoration-color: black;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em
+}
+
 .flexheader {
   height: 64px;
   display: flex;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
 }
 
 .primary-banner {
@@ -63,7 +67,61 @@ nav span {
 .column.text {
   position: relative;
   text-align: left;
-  width: 40%;
+  width: 30%;
   align-content: center;
   justify-content: center;
+}
+
+.column.text h1 {
+  font-weight: 700;
+}
+
+.column.text h2 {
+  margin: 32px 0;
+  font-weight: normal;
+}
+
+.column.text span {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.second-block {
+  display: flex;
+}
+
+.column.large {
+  width: 60%;
+  padding: 32px 24px;
+  border-right: 1px solid lightgrey;
+}
+
+.column.large h1 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.column.large p {
+  padding-bottom: 48px;
+}
+
+.column.second {
+  display: flex;
+  margin-top: 16px;
+  width: 40%;
+}
+
+.block {
+ display: flex;
+}
+
+.block img {
+  padding: 16px;
+}
+
+.block-content {
+
 }
