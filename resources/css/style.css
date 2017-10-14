@@ -61,7 +61,7 @@ nav span {
 }
 
 .column.text {
-  display: inline-block;
+  position: relative;
   text-align: left;
   width: 40%;
   align-content: center;
