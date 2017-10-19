@@ -45,10 +45,14 @@ h2 {
   font-family: Old Standard TT', serif;
 }
 
+/* Manu and Navigation */
+
 .flexheader {
   height: 64px;
   display: flex;
 }
+
+/* Logo */
 
 .colmar, .academy {
   font-family: 'Cabin', sans-serif;
@@ -57,14 +61,13 @@ h2 {
 
 .colmar {
   font-weight: 700;
-
-
 }
 
 .academy {
   color: lightgrey;
-
 }
+
+
 
 .primary-banner {
   background-color: lightgrey;
@@ -77,17 +80,14 @@ h2 {
   flex-direction: column;
 }
 
-.column.image {
-  width: 60%;
-  padding: 32px 24px;
-}
-
 .column.text {
   position: relative;
   text-align: left;
-  width: 30%;
+  width: 40%;
+  height: auto;
   align-content: center;
   justify-content: center;
+  padding-left: 24px;
 }
 
 .column.text h1 {
@@ -95,11 +95,13 @@ h2 {
 }
 
 .column.text h2 {
-  margin: 32px 0;
+  padding: 32px 0;
   font-weight: normal;
 }
 
-.column.text span {
+/*Sign up button in first content block*/
+
+.button {
   background-color: #4a4a4a;
   color: white;
   padding: 16px 0;
@@ -107,9 +109,20 @@ h2 {
   font-size: 1.5em;
 }
 
+.column.text span:hover {
+  background-color: black;
+}
+
+.content-block{
+  max-width: 70%;
+  height: auto;
+}
+
 .second-block {
   display: flex;
 }
+
+ /* Column on Left hand side */
 
 .column.large {
   width: 60%;
@@ -127,11 +140,36 @@ h2 {
   line-height: 1.5em;
 }
 
+/* Image containers */
+
+.image-content {
+  width: 100%;
+  height: auto;
+}
+
+.image-content img {
+  max-width: 100%;
+  display: block;
+}
+
+.image-block {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.image-block img {
+  max-width: 100%;
+  display: block;
+
+}
+
+/* Right hand side style */
+
 .column.second {
   display: flex;
   margin-top: 16px;
   width: 40%;
-  align-items: center;
   padding-right: 24px;
 }
 
@@ -146,15 +184,11 @@ h2 {
  background-color: lightgrey;
 }
 
-.block img {
-  padding: 16px;
-
-}
-
 .block-content {
   text-align: left;
   display: inline-block;
   justify-content: center;
+  width: 65%;
 }
 
 .block-content p {
@@ -176,9 +210,13 @@ h2 {
   padding-bottom: 32px;
 }
 
+/* EAch of the rows in the third content block */
+
 .row {
   display: flex;
 }
+
+/* Feature divs are in the third content block */
 
 .feature {
   width: 33%;
@@ -244,4 +282,8 @@ footer .location {
 
 #sub-heading {
   padding: 8px 0;
+}
+
+#our-campus {
+  border: 1px solid;
 }
