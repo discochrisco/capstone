@@ -1,6 +1,6 @@
 html {
   font-family: helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #4a4a4a;
 }
 
@@ -36,11 +36,11 @@ nav span {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2em
+  font-size: 1.75rem
 }
 
 .flexheader {
@@ -112,16 +112,70 @@ h2 {
   display: flex;
   margin-top: 16px;
   width: 40%;
+  align-items: center;
 }
 
 .block {
  display: flex;
+ align-items: center;
 }
 
 .block img {
   padding: 16px;
+
 }
 
 .block-content {
+  text-align: left;
+  display: inline-block;
+  justify-content: center;
+}
 
+.third-block {
+  background-color: lightgrey;
+  padding: 32px 72px;
+}
+
+.header-text {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.row {
+  display: flex;
+}
+
+.feature {
+  width: 33%;
+  background-color: white;
+}
+
+.feature img {
+  height: auto;
+  width: 100%;
+}
+
+.feature-content {
+  padding: 1rem 1rem;
+}
+
+.feature-content h2 {
+  padding
+}
+
+.forth-block .primary-banner {
+  background-color: white;  
+}
+
+#center-feature{
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#top-row {
+  margin-bottom: 32px;
+}
+
+#sub-heading {
+  padding: 8px 0;
 }

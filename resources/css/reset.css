@@ -3,10 +3,6 @@ a:-webkit-any-link {
   color: inherit;
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
+h1, h2, p {
   margin: 0;
 }
