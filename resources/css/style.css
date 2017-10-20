@@ -292,6 +292,12 @@ footer .location {
   border: 1px solid;
 }
 
+@media only screen and (min-width: 780px) {
+  #mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .column.large {
     width: 100%;
@@ -309,23 +315,109 @@ footer .location {
     width: 100%;
   }
 
+  .mobile-block {
+      width: 40%;
+      height: auto;
+  }
+
+  .mobile-block h1 {
+    text-align: center;
+  }
+
+  .mobile-block h2 {
+    display: none;
+  }
+
+  .column.second {
+    width: 100%;
+    padding: 0;
+  }
+
+  .third-block img {
+    display: none;
+  }
+
   #sign-up-cta {
   position: relative;
-  top: 45%;
+  top: 30%;
   left: 3%;
-  padding: 0 5rem 2.5rem 5rem;
+  padding: 0 2.5rem 1.25rem 2.5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: Gainsboro;
+  opacity: 0.9;
   }
 
   #mobile {
-    background-image:
-      url("resources/images/banner.jpg");
+    background-image: url(../images/banner.jpg);
     height: 43.5rem;
   }
 
   #disable-mobile {
     display: none;
   }
+}
+
+@media only screen and (min-width: 700px) {
+  .mobile-style {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Style the buttons that are used to open and close the accordion panel */
+  button.accordion {
+    font-size: 1.65rem;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+  }
+
+/* Style the accordion panel. Note: hidden by default */
+  div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    padding: 1rem;
+  }
+
+
+  button.accordion:after {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+  }
+
+  button.accordion.active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .row {
+    display: none;
+  }
+
+  .third-block {
+    padding: 2.66rem 1.33rem;
+    background-color: white;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .header-text {
+    padding-bottom: 16px;
+}
+
 }
