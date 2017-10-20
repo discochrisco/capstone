@@ -293,7 +293,7 @@ footer .location {
 }
 
 @media only screen and (min-width: 780px) {
-  #mobile {
+  #tablet {
     display: none;
   }
 }
@@ -315,17 +315,9 @@ footer .location {
     width: 100%;
   }
 
-  .mobile-block {
+  .tablet-block {
       width: 40%;
       height: auto;
-  }
-
-  .mobile-block h1 {
-    text-align: center;
-  }
-
-  .mobile-block h2 {
-    display: none;
   }
 
   .column.second {
@@ -337,23 +329,43 @@ footer .location {
     display: none;
   }
 
-  #sign-up-cta {
-  position: relative;
-  top: 30%;
-  left: 3%;
-  padding: 0 2.5rem 1.25rem 2.5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: Gainsboro;
-  opacity: 0.9;
+  #disable-second {
+    display: none;
   }
 
-  #mobile {
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+
+    #sign-up-cta {
+      position: relative;
+      top: 30%;
+      left: 3%;
+      padding: 0 2.5rem 1.25rem 2.5rem;
+      border: solid 1px #979797;
+      border-radius: 4px;
+      background-color: Gainsboro;
+      opacity: 0.9;
+    }
+
+  #tablet {
     background-image: url(../images/banner.jpg);
     height: 43.5rem;
+    overflow:hidden;
+    background-size: cover;
+    background-position: center;
   }
 
-  #disable-mobile {
+  .tablet-block h1 {
+    text-align: center;
+  }
+
+  .tablet-block h2 {
+    display: none;
+  }
+
+  #disable-tablet {
     display: none;
   }
 }
@@ -420,4 +432,55 @@ footer .location {
     padding-bottom: 16px;
 }
 
+}
+
+@media only screen and (max-width:510px) {
+  .colmar, .academy {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header #mobile-menu {
+    display: block;
+  }
+
+  header #mobile-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  header #desktop-menu {
+    display: none;
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  .column.text {
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .content-block {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+  #mobile-menu {
+    display: none;
+  }
 }
