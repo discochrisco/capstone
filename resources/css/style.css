@@ -92,8 +92,6 @@ img {
   flex-grow: 1
 }
 
-
-
 .column {
   display: flex;
   flex-direction: column;
@@ -122,6 +120,8 @@ img {
   text-align: center;
   font-size: 1.5em;
 }
+
+/* Hover effect on START BUTTON */
 
 .column.text span:hover {
   background-color: black;
@@ -182,10 +182,14 @@ img {
  align-items: center;
 }
 
+/* @media setup to disable hover effect on mobile */
+@media only screen and (min-width:481px) {
+
 .block:hover {
- display: flex;
- align-items: center;
- background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  }
 }
 
 .block-content {
@@ -214,7 +218,7 @@ img {
   padding-bottom: 32px;
 }
 
-/* EAch of the rows in the third content block */
+/* Each of the rows in the third content block */
 
 .row {
   display: flex;
@@ -248,6 +252,8 @@ img {
   padding: 32px 24px;
 }
 
+/* Footer desktop */
+
 footer {
   padding: 1.5rem 2rem;
   border-top: 1px solid lightgrey;
@@ -255,7 +261,7 @@ footer {
 
 footer .content {
   display: flex;
-  font-size: .75rem;
+  font-size: .9rem;
 }
 
 footer .copyright {
@@ -308,9 +314,11 @@ footer .location {
   .primary-banner {
     display: block;
   }
+
   .column {
     display: block;
   }
+
   .column.text {
     width: 100%;
   }
@@ -332,22 +340,20 @@ footer .location {
   #disable-second {
     display: none;
   }
-
-
 }
 
 @media only screen and (min-width: 480px) and (max-width: 780px) {
 
-    #sign-up-cta {
-      position: relative;
-      top: 30%;
-      left: 3%;
-      padding: 0 2.5rem 1.25rem 2.5rem;
-      border: solid 1px #979797;
-      border-radius: 4px;
-      background-color: Gainsboro;
-      opacity: 0.9;
-    }
+  #sign-up-cta {
+    position: relative;
+    top: 30%;
+    left: 3%;
+    padding: 0 2.5rem 1.25rem 2.5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-color: Gainsboro;
+    opacity: 0.9;
+  }
 
   #tablet {
     background-image: url(../images/banner.jpg);
@@ -357,6 +363,7 @@ footer .location {
     background-position: center;
   }
 
+/* Center align text to display on floating text box*/
   .tablet-block h1 {
     text-align: center;
   }
@@ -430,7 +437,7 @@ footer .location {
 
   .header-text {
     padding-bottom: 16px;
-}
+  }
 
 }
 
@@ -477,9 +484,69 @@ footer .location {
     max-width: 100%;
   }
 
+  .block {
+    display: block;
+  }
+
+  .block img {
+    display:none;
+  }
+
+  .second-block {
+    padding: 0 16px;
+  }
+
+  .block-content {
+    padding: 16px 16px 32px 16px;
+  }
+
+  .block span {
+    font-size: 1.15em;
+  }
+
+  .forth-block {
+    padding: 32px 0 24px 0;
+  }
+
+  footer {
+    padding: 16px 24px;
+  }
+
+  #first-mobile {
+    background-image: url(../images/information-orientation-mobile.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    height: 14rem;
+  }
+
+  #second-mobile {
+    background-image: url(../images/information-campus-mobile.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    height: 14rem;
+  }
+
+  #third-mobile {
+    background-image: url(../images/information-guest-lecture-mobile.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    height: 14rem;
+  }
+
+  #second-forth {
+    display: none;
+  }
+
+  #hide-mobile {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 480px) {
+/* Remove the mobile menu above 480px */
+@media only screen and (min-width: 480px)  {
   #mobile-menu {
     display: none;
   }
